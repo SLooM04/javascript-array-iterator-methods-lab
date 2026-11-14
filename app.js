@@ -154,3 +154,33 @@ console.log('Exercise 2 correct result: ', [
   { first: 'Lise', last: 'Meitner' },
   { first: 'Hanna', last: 'Hammarström' },
 ]);
+
+/* 
+Exercise 3: Array.prototype.find()
+
+Use Array.prototype.find() to identify the inventor with the first name 'Ada' 
+from an array of inventor objects
+
+- You have an array of objects, each representing an inventor with various 
+  properties including their first name.
+- Utilize the Array.prototype.find() method to locate the object for the 
+  inventor with the first name 'Ada'.
+- Assign the found inventor object to the variable inventorNamedAda
+*/
+
+let inventorNamedAda = {};
+
+// Complete the exercise in the space below:
+inventorNamedAda = inventors.find((nameAda)=>{
+return nameAda.first === 'Ada'
+
+
+})
+// Check your work:
+console.log('Exercise 3 my result: ', inventorNamedAda);
+console.log('Exercise 3 correct result: ', {
+  first: 'Ada',
+  last: 'Lovelace',
+  year: 1815,
+  passed: 1852,
+});
