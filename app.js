@@ -298,3 +298,24 @@ let currentYear = new Date().getFullYear()
 // Check your work:
 console.log('Exercise 6 my result: ', isEveryone19OrOlder);
 console.log('Exercise 6 correct result: ', false);
+
+/*
+Exercise 7: Array.prototype.find()
+
+Use Array.prototype.find() to identify and retrieve the comment object with 
+a specific ID 823423 from an array of comment objects.
+
+- Assign the found comment object to the variable 'commentById'.
+*/
+
+let commentById = {};
+
+// Complete the exercise in the space below:
+commentById = comments.find((num)=>{
+  return num.id === 823423
+
+
+})
+// Check your work:
+console.log('Exercise 7 my result: ', commentById);
+console.log('Exercise 7 correct result: ', { text: 'Super good', id: 823423 });
